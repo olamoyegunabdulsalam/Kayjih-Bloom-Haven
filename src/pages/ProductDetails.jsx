@@ -180,58 +180,6 @@ const ProductDetails = () => {
                   </motion.div>
                 )}
 
-                {/* Workmanship Selection for Decoration Package */}
-                {selectedProduct.workmanship &&
-                  selectedProduct.workmanship.length > 0 && (
-                    <motion.div variants={containerVariants} className="mb-8">
-                      <div className="flex items-center gap-3 mb-4">
-                        <div className="p-2 rounded-lg bg-purple-100">
-                          <FiTool className="text-purple-500" />
-                        </div>
-                        <h3 className="text-lg font-bold text-gray-800">
-                          Select Workmanship Type
-                        </h3>
-                      </div>
-
-                      <div className="grid grid-cols-1 gap-3">
-                        {selectedProduct.workmanship.map((work, index) => (
-                          <motion.div
-                            key={index}
-                            whileHover={{ scale: 1.02 }}
-                            whileTap={{ scale: 0.98 }}
-                            onClick={() => handleWorkmanshipSelect(work)}
-                            className={`p-4 rounded-xl border-2 cursor-pointer transition-all ${
-                              selectedWorkmanship === work
-                                ? "border-purple-500 bg-purple-50"
-                                : "border-gray-200 hover:border-purple-300 bg-white"
-                            }`}
-                          >
-                            <div className="flex justify-between items-center mb-1">
-                              <span className="font-bold text-gray-800">
-                                {work.type}
-                              </span>
-                              <span className="text-lg font-bold text-purple-600">
-                                {work.price}
-                              </span>
-                            </div>
-                            <p className="text-xs text-gray-500 mt-1">
-                              {work.type.includes("Tana")
-                                ? "Higher price due to high ceiling complexity"
-                                : work.type.includes("Normal")
-                                  ? "Standard bed with ceiling decoration"
-                                  : "Basic bunk bed decoration"}
-                            </p>
-                          </motion.div>
-                        ))}
-                      </div>
-
-                      <p className="text-sm text-gray-500 mt-3 p-3 bg-gray-50 rounded-lg">
-                        💡 Workmanship depends on the style you want. Price can
-                        be reduced if you prefer simpler decoration.
-                      </p>
-                    </motion.div>
-                  )}
-
                 {/* Pricing Options */}
                 {selectedProduct.pricing && (
                   <motion.div variants={containerVariants} className="mb-8">
@@ -294,6 +242,59 @@ const ProductDetails = () => {
                   </motion.div>
                 )}
 
+                {/* Workmanship Selection for Decoration Package */}
+                {selectedProduct.workmanship &&
+                  selectedProduct.workmanship.length > 0 && (
+                    <motion.div variants={containerVariants} className="mb-8">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="p-2 rounded-lg bg-purple-100">
+                          <FiTool className="text-purple-500" />
+                        </div>
+                        <h3 className="text-lg font-bold text-gray-800">
+                          Select Workmanship Type
+                        </h3>
+                      </div>
+
+                      <div className="grid grid-cols-1 gap-3">
+                        {selectedProduct.workmanship.map((work, index) => (
+                          <motion.div
+                            key={index}
+                            whileHover={{ scale: 1.02 }}
+                            whileTap={{ scale: 0.98 }}
+                            onClick={() => handleWorkmanshipSelect(work)}
+                            className={`p-4 rounded-xl border-2 cursor-pointer transition-all ${
+                              selectedWorkmanship === work
+                                ? "border-purple-500 bg-purple-50"
+                                : "border-gray-200 hover:border-purple-300 bg-white"
+                            }`}
+                          >
+                            <div className="flex justify-between items-center mb-1">
+                              <span className="font-bold text-gray-800">
+                                {work.type}
+                              </span>
+                              <span className="text-lg font-bold text-purple-600">
+                                {work.price}
+                              </span>
+                            </div>
+                            <p className="text-xs text-gray-500 mt-1">
+                              {work.type.includes("Tana")
+                                ? "Higher price due to high ceiling complexity"
+                                : work.type.includes("Normal")
+                                  ? "Standard bed with ceiling decoration"
+                                  : "Basic bunk bed decoration"}
+                            </p>
+                          </motion.div>
+                        ))}
+                      </div>
+
+                      <p className="text-sm text-gray-500 mt-3 p-3 bg-gray-50 rounded-lg">
+                        💡 Workmanship depends on the style you want. Price can
+                        be reduced if you prefer simpler decoration.
+                      </p>
+                    </motion.div>
+                  )}
+
+                
                 {/* Features */}
                 {selectedProduct.features && (
                   <motion.div variants={containerVariants} className="mb-8">

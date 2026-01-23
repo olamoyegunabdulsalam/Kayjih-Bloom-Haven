@@ -172,11 +172,11 @@ export const products = [
         ],
         pricing: [
             {
-                option: "With Normal Balloon",
+                option: "Total Material With Normal Balloon",
                 total: " ₦21,500"
             },
             {
-                option: "With Shiny Balloon",
+                option: "Total Material With Shiny Balloon",
                 total: " ₦22,500"
             }
         ],
