@@ -40,14 +40,7 @@ const ProductDetails = () => {
       if (product.pricing && product.pricing[0]) {
         setSelectedNote(product.pricing[0]);
       }
-      // Auto-select first workmanship option for decoration package
-      if (product.workmanship && product.workmanship[0]) {
-        setSelectedWorkmanship(product.workmanship[0]);
-        setOrderDetails((prev) => ({
-          ...prev,
-          selectedWorkmanship: product.workmanship[0],
-        }));
-      }
+
     } else {
       navigate("/products");
     }
