@@ -41,16 +41,9 @@ const [currentIndex, setCurrentIndex] = useState(0);
       description:
         "A clean and professional event decoration tailored to elevate corporate gatherings and brand presence.",
     },
+
     {
       id: 5,
-      category: "bouquet",
-      title: "Graduation Bouquet",
-      image: "/img/bouquet-1.jpeg",
-      description:
-        "A thoughtfully designed graduation bouquet that celebrates success, milestones, and new beginnings.",
-    },
-    {
-      id: 6,
       category: "packages",
       title: "Kids Birthday Theme",
       image: "/img/wrapped-gift-1.jpeg",
@@ -58,7 +51,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
         "A fun and playful themed decoration featuring bright colors and characters kids absolutely love.",
     },
     {
-      id: 7,
+      id: 6,
       category: "event",
       title: "Anniversary Decoration",
       image: "/img/decoration-2.jpeg",
@@ -66,7 +59,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
         "A romantic decoration setup created to celebrate love, memories, and special anniversary moments.",
     },
     {
-      id: 8,
+      id: 7,
       category: "bouquet",
       title: "Wedding Money Bouquet",
       image: "/img/bouquet-2.jpeg",
@@ -74,7 +67,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
         "An elegant wedding money bouquet designed as a stylish and meaningful bridal gift.",
     },
     {
-      id: 9,
+      id: 8,
       category: "event",
       title: "Wedding Money Bouquet Display",
       image: "/img/decoration-3.jpeg",
@@ -82,7 +75,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
         "A stunning decorative display that blends wedding elegance with creative money bouquet styling.",
     },
     {
-      id: 10,
+      id: 9,
       category: "packages",
       title: "Wedding Gift Package",
       image: "/img/wrapped-gift-2.jpeg",
@@ -90,7 +83,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
         "A premium wedding gift package thoughtfully wrapped to leave a lasting impression.",
     },
     {
-      id: 11,
+      id: 10,
       category: "bouquet",
       title: "Luxury Wedding Money Bouquet",
       image: "/img/bouquet-3.jpeg",
@@ -98,20 +91,12 @@ const [currentIndex, setCurrentIndex] = useState(0);
         "A luxurious money bouquet crafted for weddings, symbolizing love, prosperity, and celebration.",
     },
     {
-      id: 12,
+      id: 11,
       category: "bouquet",
       title: "Classic Wedding Money Bouquet",
       image: "/img/bouquet-4.jpeg",
       description:
         "A classic money bouquet design featuring a neat arrangement and timeless bridal elegance.",
-    },
-    {
-      id: 13,
-      category: "bouquet",
-      title: "Premium Wedding Money Bouquet",
-      image: "/img/bouquet-5.jpeg",
-      description:
-        "A premium handcrafted money bouquet created to make wedding gifting truly memorable.",
     },
   ];
 

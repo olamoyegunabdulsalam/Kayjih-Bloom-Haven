@@ -13,6 +13,7 @@ const Footer = () => {
           © {currentYear} KAYJIH BLOOM HAVEN. All rights reserved.
         </div>
 
+
         {/* Bottom text */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}

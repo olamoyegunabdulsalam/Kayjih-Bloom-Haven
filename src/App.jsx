@@ -1,30 +1,26 @@
 // App.jsx
-import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Services from './components/Services';
-import Gallery from './components/Gallery';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import FloatingWhatsApp from './components/FloatingWhatsApp';
-import ScrollToTop from './components/ScrollToTop';
-import { Toaster } from 'react-hot-toast';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import ProductDetails from "./pages/ProductDetails";
+import ScrollToHash from "./components/ScrollToHash"; 
+import AdminDashboard from "./components/AdminDashboard";
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-cream-50 to-rose-50">
+    <Router>
+      <ScrollToHash />
       <Toaster position="top-right" />
-      <Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <Gallery />
-      <Contact />
-      <Footer />
-      <FloatingWhatsApp />
-      <ScrollToTop />
-    </div>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<ProductDetails />} />
+        <Route path="/admin/reviews" element={<AdminDashboard />} />
+      </Routes>
+    </Router>
   );
 };
 
