@@ -244,13 +244,6 @@ const AdminDashboard = () => {
               )}
             </motion.button>
           </form>
-
-          <div className="mt-6 p-4 bg-amber-50 border border-amber-200 rounded-lg">
-            <p className="text-sm text-amber-800">
-              <FiAlertCircle className="inline mr-2" />
-              Contact the developer for admin credentials
-            </p>
-          </div>
         </motion.div>
       </div>
     );
