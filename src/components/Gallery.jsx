@@ -98,6 +98,14 @@ const [currentIndex, setCurrentIndex] = useState(0);
       description:
         "A classic money bouquet design featuring a neat arrangement and timeless bridal elegance.",
     },
+    {
+      id: 12,
+      category: "bouquet",
+      title: "Birthday Money Bouquet",
+      image: "/img/bouquet-1.jpeg",
+      description:
+        "A classic money bouquet design featuring a neat arrangement and timeless elegant birthday celebration.",
+    },
   ];
 
   const filters = [
